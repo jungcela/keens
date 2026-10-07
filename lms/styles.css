@@ -37,20 +37,19 @@
 
 .copy-line{display:block}
 
-/* Live class: on-demand practice and shared class time */
+/* Video lessons and live class are distinct ways to practice */
+.practice-lead{font-size:1.1rem;line-height:1.85;color:#49566a;max-width:720px;margin:24px 0 0}
 .live-class{background:var(--deep);color:#fff;overflow:hidden}
-.live-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:72px;align-items:center}
+.live-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:70px;align-items:center}
 .live-class .section-label{color:#a8bfff}
 .live-copy h2{font-size:clamp(2.4rem,4.3vw,4.5rem);line-height:1.27;letter-spacing:-.06em;font-weight:900;margin:0}
 .live-copy h2 span{color:#9dbbff}
-.live-lead{font-size:1.12rem;line-height:1.9;color:#d8e3fa;max-width:710px;margin:30px 0 0}
-.live-access{display:inline-flex;align-items:center;gap:10px;border:1px solid #6076aa;background:#1b2a4a;padding:10px 15px;margin:32px 0 0;font-size:.91rem;font-weight:700;color:#e3ecff}
+.live-lead{font-size:1.12rem;line-height:1.9;color:#d8e3fa;max-width:580px;margin:30px 0 0}
+.live-access{display:flex;align-items:center;gap:10px;width:max-content;max-width:100%;border:1px solid #6076aa;background:#1b2a4a;padding:10px 15px;margin:32px 0 0;font-size:.91rem;font-weight:700;color:#e3ecff}
 .live-access span{width:8px;height:8px;flex:none;border-radius:50%;background:#91b2ff}
-.live-modes{display:grid;gap:12px}
-.live-mode{min-height:180px;display:flex;flex-direction:column;justify-content:space-between;padding:25px 29px;border:1px solid #516185;background:#1a2540}
-.live-mode span{font-family:'DM Sans',sans-serif;font-size:.76rem;letter-spacing:.14em;font-weight:700;color:#aec4f7}
-.live-mode strong{font-size:1.8rem;line-height:1.28;letter-spacing:-.05em}
-.live-mode-together{background:#2154d2;border-color:#759cff}
-.live-mode-together span{color:#d2e0ff}
-@media(max-width:850px){.live-grid{grid-template-columns:1fr;gap:38px}.live-modes{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.live-copy h2{font-size:clamp(2.05rem,8vw,3rem)}.live-lead{font-size:1rem;margin-top:22px}.live-access{font-size:.83rem;margin-top:25px}.live-modes{gap:8px}.live-mode{min-height:150px;padding:18px 15px}.live-mode span{font-size:.65rem}.live-mode strong{font-size:1.25rem}}
+.live-button{display:flex;width:max-content;margin-top:24px}
+.live-visual{margin:0}
+.live-visual img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border:1px solid #7284ac;box-shadow:0 24px 65px #070d2080}
+.live-visual figcaption{color:#bfcdf0;font-size:.82rem;font-weight:700;margin-top:12px}
+@media(max-width:850px){.live-grid{grid-template-columns:1fr;gap:38px}.live-visual{max-width:650px}}
+@media(max-width:600px){.practice-lead{font-size:1rem;margin-top:20px}.live-copy h2{font-size:clamp(2.05rem,8vw,3rem)}.live-lead{font-size:1rem;margin-top:22px}.live-access{font-size:.83rem;margin-top:25px}.live-button{width:100%;margin-top:22px}.live-visual img{aspect-ratio:4/3}.live-visual figcaption{font-size:.75rem}}
