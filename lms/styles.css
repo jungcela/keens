@@ -36,3 +36,21 @@
 @media(max-width:600px){.hero-media{min-height:330px}.hero-media figcaption{left:20px;bottom:19px}.hero-media figcaption strong{font-size:1.35rem}.class-scene{height:310px;margin-top:42px}.class-scene img{object-position:42% center}.class-scene figcaption{left:20px;bottom:20px}.class-scene figcaption strong{font-size:1.55rem}.proof-heading{margin-bottom:27px}.proof-heading h2{font-size:clamp(2.05rem,8vw,3rem)}.proof-heading p:last-child{font-size:1rem}.proof-screen{padding:8px 8px 9px}.proof-screen figcaption{font-size:.75rem;padding:9px 2px 0}.continuity-copy .continuity-body{margin-top:27px}.continuity-media{width:min(100%,380px)}}
 
 .copy-line{display:block}
+
+/* Live class: on-demand practice and shared class time */
+.live-class{background:var(--deep);color:#fff;overflow:hidden}
+.live-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:72px;align-items:center}
+.live-class .section-label{color:#a8bfff}
+.live-copy h2{font-size:clamp(2.4rem,4.3vw,4.5rem);line-height:1.27;letter-spacing:-.06em;font-weight:900;margin:0}
+.live-copy h2 span{color:#9dbbff}
+.live-lead{font-size:1.12rem;line-height:1.9;color:#d8e3fa;max-width:710px;margin:30px 0 0}
+.live-access{display:inline-flex;align-items:center;gap:10px;border:1px solid #6076aa;background:#1b2a4a;padding:10px 15px;margin:32px 0 0;font-size:.91rem;font-weight:700;color:#e3ecff}
+.live-access span{width:8px;height:8px;flex:none;border-radius:50%;background:#91b2ff}
+.live-modes{display:grid;gap:12px}
+.live-mode{min-height:180px;display:flex;flex-direction:column;justify-content:space-between;padding:25px 29px;border:1px solid #516185;background:#1a2540}
+.live-mode span{font-family:'DM Sans',sans-serif;font-size:.76rem;letter-spacing:.14em;font-weight:700;color:#aec4f7}
+.live-mode strong{font-size:1.8rem;line-height:1.28;letter-spacing:-.05em}
+.live-mode-together{background:#2154d2;border-color:#759cff}
+.live-mode-together span{color:#d2e0ff}
+@media(max-width:850px){.live-grid{grid-template-columns:1fr;gap:38px}.live-modes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.live-copy h2{font-size:clamp(2.05rem,8vw,3rem)}.live-lead{font-size:1rem;margin-top:22px}.live-access{font-size:.83rem;margin-top:25px}.live-modes{gap:8px}.live-mode{min-height:150px;padding:18px 15px}.live-mode span{font-size:.65rem}.live-mode strong{font-size:1.25rem}}
