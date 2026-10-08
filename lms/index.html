@@ -89,7 +89,7 @@
     <section class="lms-proof section" aria-labelledby="lms-proof-title">
       <div class="container">
         <div class="proof-heading"><p class="section-label">A LOOK INSIDE · VIDEO CLASS</p><h2 id="lms-proof-title">선생님 영상,<br><span>필요할 때 다시 봐요.</span></h2><p>수강 중인 클래스의 과제와 설명, 워밍업 영상을 골라 보며 집에서도 연습할 수 있어요.</p></div>
-        <figure class="proof-screen"><img src="./assets/lms-overview.png" alt="과제, 수업 설명, 워밍업과 스트레칭 영상이 보이는 킨즈서울 온라인 강의 목록" loading="lazy"><figcaption>킨즈서울 영상 강의 실제 화면</figcaption></figure>
+        <figure class="proof-screen"><div class="proof-screen-viewport"><img src="./assets/lms-overview.png" alt="과제, 수업 설명, 워밍업과 스트레칭 영상이 끝까지 보이는 킨즈서울 온라인 강의 목록" loading="lazy"></div><figcaption>킨즈서울 영상 강의 실제 화면</figcaption></figure>
       </div>
     </section>
 
@@ -102,7 +102,24 @@
           <p class="live-access"><span aria-hidden="true"></span>킨즈서울 수강생이라면 누구나 이용 가능</p>
           <a class="button button-light live-button" href="https://keensseoul.channel.io" target="_blank" rel="noopener noreferrer">킨즈서울 수업 알아보기</a>
         </div>
-        <figure class="live-visual"><img src="./assets/live-class-teacher.png" alt="킨즈서울 라이브 클래스에서 선생님이 춤을 보여주는 화면" loading="lazy"><figcaption>킨즈서울 라이브 클래스 화면</figcaption></figure>
+        <figure class="live-visual">
+          <div class="meeting-window" role="img" aria-label="선생님 영상을 화상 수업 화면으로 연출한 이미지">
+            <div class="meeting-topbar" aria-hidden="true"><span class="meeting-live"><span></span> LIVE</span><span class="meeting-title">킨즈서울 라이브 클래스</span><span class="meeting-menu">•••</span></div>
+            <div class="meeting-stage">
+              <img src="./assets/live-class-teacher.png" alt="" loading="lazy">
+              <span class="meeting-speaker">킨즈서울 선생님</span>
+              <div class="meeting-self-view" aria-hidden="true"><span class="meeting-self-avatar">나</span><span class="meeting-self-label">내 화면</span></div>
+            </div>
+            <div class="meeting-toolbar" aria-hidden="true">
+              <span class="meeting-tool"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></svg><small>마이크</small></span>
+              <span class="meeting-tool"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg><small>비디오</small></span>
+              <span class="meeting-tool"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3"/><path d="M3 19v-2a5 5 0 0 1 10 0v2H3Zm12-12a3 3 0 0 1 0 6m1 2a4 4 0 0 1 5 4"/></svg><small>참여자</small></span>
+              <span class="meeting-tool"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v12H9l-5 4V5Z"/><path d="M8 9h8m-8 4h5"/></svg><small>채팅</small></span>
+              <span class="meeting-leave">나가기</span>
+            </div>
+          </div>
+          <figcaption>선생님 영상을 사용한 라이브 클래스 화면 연출</figcaption>
+        </figure>
       </div>
     </section>
 

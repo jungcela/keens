@@ -25,7 +25,8 @@
 .proof-heading h2 span{color:var(--blue)}
 .proof-heading p:last-child{font-size:1.08rem;color:var(--muted);line-height:1.85;margin:21px 0 0}
 .proof-screen{margin:0;background:#f2f5fb;border:1px solid #d9e0ec;padding:18px 18px 12px;box-shadow:0 30px 70px #14254b1c}
-.proof-screen img{width:100%;height:auto;display:block}
+.proof-screen-viewport{width:100%;aspect-ratio:1136/888;overflow:hidden;background:#fff}
+.proof-screen-viewport img{width:100%;height:auto;display:block;transform:translateY(-6.7227%)}
 .proof-screen figcaption{padding:13px 3px 0;font-size:.84rem;color:#58677d;font-weight:700}
 .continuity-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:80px}
 .continuity-copy .continuity-body{max-width:560px;margin-top:32px}
@@ -49,7 +50,23 @@
 .live-access span{width:8px;height:8px;flex:none;border-radius:50%;background:#91b2ff}
 .live-button{display:flex;width:max-content;margin-top:24px}
 .live-visual{margin:0}
-.live-visual img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border:1px solid #7284ac;box-shadow:0 24px 65px #070d2080}
+.meeting-window{overflow:hidden;border:1px solid #647493;border-radius:13px;background:#11141b;box-shadow:0 24px 65px #070d2080}
+.meeting-topbar{height:39px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 13px;background:#22252c;color:#d9e1ee;font-size:.68rem;font-weight:700;letter-spacing:.02em}
+.meeting-live{display:flex;align-items:center;gap:6px;color:#fff;background:#ba3039;padding:4px 7px;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:.58rem;letter-spacing:.08em}
+.meeting-live span{width:5px;height:5px;background:#fff;border-radius:50%}
+.meeting-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.meeting-menu{font-size:1.12rem;line-height:1;color:#aeb8ca;letter-spacing:2px}
+.meeting-stage{position:relative;background:#303139}
+.meeting-stage>img{display:block;width:100%;height:auto;aspect-ratio:1134/641;object-fit:contain}
+.meeting-speaker{position:absolute;left:10px;bottom:10px;background:#151820ce;border-radius:4px;padding:5px 8px;color:#fff;font-size:.7rem;font-weight:700}
+.meeting-self-view{position:absolute;right:12px;bottom:12px;width:25%;max-width:135px;aspect-ratio:16/10;border:1px solid #777f90;border-radius:5px;background:linear-gradient(145deg,#2b3550,#192034);box-shadow:0 3px 15px #0b102a8a;display:flex;align-items:center;justify-content:center}
+.meeting-self-avatar{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#6b7da8;color:#fff;font-size:.92rem;font-weight:800}
+.meeting-self-label{position:absolute;left:5px;bottom:4px;background:#0a0d14a8;padding:2px 4px;font-size:.56rem;color:#e1e8f6}
+.meeting-toolbar{height:63px;display:flex;align-items:center;justify-content:center;gap:26px;padding:7px 12px;background:#22252c}
+.meeting-tool{display:flex;align-items:center;flex-direction:column;gap:3px;color:#e4e9f1}
+.meeting-tool svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.meeting-tool small{font-size:.59rem;white-space:nowrap}
+.meeting-leave{align-self:center;color:#fff;background:#b53038;border-radius:5px;padding:7px 12px;font-size:.65rem;font-weight:700;white-space:nowrap}
 .live-visual figcaption{color:#bfcdf0;font-size:.82rem;font-weight:700;margin-top:12px}
 @media(max-width:850px){.live-grid{grid-template-columns:1fr;gap:38px}.live-visual{max-width:650px}}
-@media(max-width:600px){.practice-lead{font-size:1rem;margin-top:20px}.live-copy h2{font-size:clamp(2.05rem,8vw,3rem)}.live-lead{font-size:1rem;margin-top:22px}.live-access{font-size:.83rem;margin-top:25px}.live-button{width:100%;margin-top:22px}.live-visual img{aspect-ratio:4/3}.live-visual figcaption{font-size:.75rem}}
+@media(max-width:600px){.practice-lead{font-size:1rem;margin-top:20px}.live-copy h2{font-size:clamp(2.05rem,8vw,3rem)}.live-lead{font-size:1rem;margin-top:22px}.live-access{font-size:.83rem;margin-top:25px}.live-button{width:100%;margin-top:22px}.meeting-topbar{height:34px;padding:0 9px}.meeting-toolbar{height:54px;gap:16px;padding:5px 8px}.meeting-tool svg{width:16px;height:16px}.meeting-tool small{font-size:.5rem}.meeting-leave{padding:6px 8px;font-size:.55rem}.meeting-self-view{right:7px;bottom:7px}.meeting-self-avatar{width:27px;height:27px;font-size:.75rem}.meeting-speaker{left:6px;bottom:6px;font-size:.55rem}.live-visual figcaption{font-size:.75rem}}
