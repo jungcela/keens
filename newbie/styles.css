@@ -77,6 +77,13 @@ h1, h2, h3, p { word-break: keep-all; }
 .bridge-spark-one { top: 70px; left: 3%; font-size: 70px; transform: rotate(-16deg); }
 .bridge-spark-two { right: 4%; bottom: 63px; font-size: 53px; }
 
+.expression { background: #fffefa; }
+.expression-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 64px; align-items: start; border-top: 2px solid var(--blue); border-bottom: 1px solid var(--line); padding-block: 42px 48px; }
+.expression-question > p:last-child { margin: 23px 0 0; font-size: clamp(21px, 2.3vw, 29px); font-weight: 800; line-height: 1.5; letter-spacing: -.04em; }
+.expression-answer h2 { margin: 0; font-size: clamp(29px, 3.4vw, 44px); line-height: 1.4; letter-spacing: -.055em; }
+.expression-answer h2 em { color: var(--blue); font-style: normal; }
+.expression-answer p { max-width: 650px; margin: 23px 0 0; color: #505766; font-size: 17px; line-height: 1.8; }
+
 .reasons { background: #f7f4ec; }
 .reasons-intro { display: grid; grid-template-columns: 1fr .78fr; align-items: end; gap: 70px; margin-bottom: 48px; }
 .reasons-intro h2 { margin: 16px 0 0; font-size: clamp(36px, 4.3vw, 58px); line-height: 1.27; letter-spacing: -.062em; }
@@ -127,6 +134,7 @@ h1, h2, h3, p { word-break: keep-all; }
   .moment-grid { gap: 12px; }
   .moment-card { padding: 23px; }
   .moment-card h3 { font-size: 24px; }
+  .expression-grid { gap: 30px; }
   .reasons-intro { gap: 34px; }
   .reasons-intro > p { font-size: 16px; }
   .class-grid { gap: 42px; }
@@ -165,6 +173,10 @@ h1, h2, h3, p { word-break: keep-all; }
   .bridge p:last-of-type { font-size: 14px; }
   .bridge-spark-one { top: 15px; left: 1%; font-size: 38px; }
   .bridge-spark-two { right: 1%; bottom: 16px; font-size: 31px; }
+  .expression-grid { grid-template-columns: 1fr; gap: 26px; padding-block: 29px 35px; }
+  .expression-question > p:last-child { margin-top: 13px; font-size: 21px; }
+  .expression-answer h2 { font-size: 29px; }
+  .expression-answer p { margin-top: 17px; font-size: 15px; line-height: 1.75; }
   .reasons-intro { grid-template-columns: 1fr; gap: 19px; margin-bottom: 30px; }
   .reasons-intro h2 { font-size: 36px; }
   .reasons-intro > p { margin: 0; font-size: 15px; line-height: 1.75; }
